@@ -9,4 +9,4 @@ Chrome extension that replaces occurrences of 'tax' and 'taxes' with 'butt' and 
 Installation
 ------------
 
-In Chrome, choose Window > Extensions.  Drag CloudToButt.crx into the page that appears.
+In Chrome, choose Window > Extensions.  Drag TaxToButt.crx into the page that appears.
