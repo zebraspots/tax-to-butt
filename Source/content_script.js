@@ -35,6 +35,12 @@ function handleText(textNode)
 	v = v.replace(/\btax\b/g, "butt");
 	v = v.replace(/\bTaxes\b/g, "Butts");
 	v = v.replace(/\btaxes\b/g, "butts");
+	v = v.replace(/\btaxpayer\b/g, "buttpayer");
+	v = v.replace(/\bTaxpayer\b/g, "Buttpayer");
+	v = v.replace(/\btaxation\b/g, "buttation");
+	v = v.replace(/\bTaxation\b/g, "Buttation");
+	v = v.replace(/\btaxing\b/g, "butting");
+	v = v.replace(/\bTaxing\b/g, "Butting");
 	
 	textNode.nodeValue = v;
 }

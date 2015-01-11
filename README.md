@@ -1,7 +1,7 @@
 tax-to-butt
 =============
 
-Chrome extension that replaces occurrences of 'tax' and 'taxes' with 'butt' and 'butts'
+Chrome extension that replaces occurrences of tax-related words with butt-related words.
 
 [Direct download of crx file](https://github.com/zebraspots/tax-to-butt/blob/master/TaxToButt.crx?raw=true)
 
