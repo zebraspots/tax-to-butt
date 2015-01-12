@@ -22,7 +22,9 @@ function walk(node)
 			break;
 
 		case 3: // Text node
-			handleText(node);
+			if (node.parentElement.tagName.toLowerCase() != "script") {
+				handleText(node);
+			}
 			break;
 	}
 }
@@ -43,6 +45,8 @@ function handleText(textNode)
 	v = v.replace(/\bTaxing\b/g, "Butting");
 	v = v.replace(/\bTaxed\b/g, "Butted");
 	v = v.replace(/\btaxed\b/g, "butted");
+	v = v.replace(/\bTaxable\b/g, "Buttable");
+	v = v.replace(/\btaxable\b/g, "buttable");
 	
 	textNode.nodeValue = v;
 }
