@@ -22,7 +22,9 @@ function walk(node)
 			break;
 
 		case 3: // Text node
-			handleText(node);
+			if (node.parentElement.tagName.toLowerCase() != "script") {
+				handleText(node);
+			}
 			break;
 	}
 }
@@ -31,10 +33,20 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+	v = v.replace(/\bTax\b/g, "Butt");
+	v = v.replace(/\btax\b/g, "butt");
+	v = v.replace(/\bTaxes\b/g, "Butts");
+	v = v.replace(/\btaxes\b/g, "butts");
+	v = v.replace(/\btaxpayer\b/g, "buttpayer");
+	v = v.replace(/\bTaxpayer\b/g, "Buttpayer");
+	v = v.replace(/\btaxation\b/g, "buttation");
+	v = v.replace(/\bTaxation\b/g, "Buttation");
+	v = v.replace(/\btaxing\b/g, "butting");
+	v = v.replace(/\bTaxing\b/g, "Butting");
+	v = v.replace(/\bTaxed\b/g, "Butted");
+	v = v.replace(/\btaxed\b/g, "butted");
+	v = v.replace(/\bTaxable\b/g, "Buttable");
+	v = v.replace(/\btaxable\b/g, "buttable");
 	
 	textNode.nodeValue = v;
 }
